@@ -48,7 +48,7 @@ void printMaze(vector<vector<int>> maze) {
 }
 
 // Función para realizar la búsqueda en profundidad (DFS)
-void dfs(vector<vector<int>> *maze, Position& start, Position& end) {
+void dfs(vector<vector<int>> *maze, Position start, Position end) {
     stack<Position> s;
     s.push(start);
 
@@ -79,7 +79,7 @@ void dfs(vector<vector<int>> *maze, Position& start, Position& end) {
 }
 
 // Función para realizar la búsqueda en amplitud (BFS)
-void bfs(vector<vector<int>> *maze, Position& start, Position& end) {
+void bfs(vector<vector<int>> *maze, Position start, Position end) {
     queue<Position> q;
     q.push(start);
 
